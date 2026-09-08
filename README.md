@@ -5,6 +5,8 @@
 I built this for real-time vision on a normal PC (no fancy GPU required).  
 This drop is an **evaluation build**: testing, students, research. **Not** a commercial license. Source stays closed; you get the compiled package.
 
+**Download (Windows x64 zip):** [Releases — eval 0.3.14](https://github.com/olesha-ai/edgeinfer-eval/releases/latest)
+
 ![demo](./video.gif)
 
 My desk setup — Core **i5-11400**, cheap rolling-shutter webcam, OpenVINO on CPU:
@@ -75,6 +77,7 @@ For disk logs: Settings → Access Key → Advanced → **Memory diag** → Appl
 
 ## Run it
 
+0. Get the zip from [Releases](https://github.com/olesha-ai/edgeinfer-eval/releases/latest).  
 1. Unpack somewhere local (not a sync folder if you can help it).  
 2. `lib/openvino/` and `model/*.onnx` must sit with the exe.  
 3. Plug USB cam, start `EdgeInfer.exe` **from cmd** if you want to see timings.  
