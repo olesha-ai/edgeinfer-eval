@@ -1,11 +1,16 @@
 # EdgeInfer
 
-**eval build 0.3.14** · Windows x64 · Nim · ONNX Runtime + OpenVINO · ordinary USB camera
+**build 1.0.0** · Windows x64 · Nim · ONNX Runtime + OpenVINO · ordinary USB camera
 
 I built this for real-time vision on a normal PC (no fancy GPU required).  
 This drop is an **evaluation build**: testing, students, research. **Not** a commercial license. Source stays closed; you get the compiled package.
 
-**Download (Windows x64 zip):** [Releases — eval 0.3.14](https://github.com/olesha-ai/edgeinfer-eval/releases/latest)
+**Download (Windows x64 zip):** [Releases — 1.0.0](https://github.com/olesha-ai/edgeinfer-eval/releases/latest)
+
+### What’s new in 1.0.0 (same repo — not a second project)
+
+ImGui UI · sticky preview boxes · Out TCP + E1 + `trig.exe` in the zip · slim OpenVINO package · no white flash on start.  
+Full notes: paste from `RELEASE_NOTES_1.0.0.md` into the GitHub Release body (or see the Release page).
 
 ![demo](./video.gif)
 
@@ -56,6 +61,8 @@ Honest corners I won’t hide:
 | | |
 |--|--|
 | `EdgeInfer.exe` | the app |
+| `trig.exe` | optional LAN client (Out TCP / Find / E1) — same zip |
+| `trig.json` | trig defaults (host/port/auth); edit or use UI |
 | `lib/` | ORT + OpenVINO DLLs |
 | `model/` | ONNX (YOLOX line) |
 | `settings.json` | created/updated next to the exe |
